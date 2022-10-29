@@ -1,17 +1,5 @@
 
 import { createReducer } from "./createReducer"
-const getSuccess = (state, payload) =>{
-    console.log("info", payload)
-    return {...state,  todos: payload.data,  loader: false}
-}
-
-const getRejected = (state, payload) =>{
-  console.log(payload);
-  return {...state, loader: false}
-}
-const getPending = (state, payload) =>{
-  return {...state, loader: true}
-}
 
 const initialState = {
   todo: [],
