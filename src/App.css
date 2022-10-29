@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 30px;
 }
 
 .App-logo {
@@ -39,4 +40,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.address-container > div{
+  background: rgb(151, 151, 255);
+  padding: 10px 30px; 
+}
+.address-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.user-address{
+  margin-top: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
 }
